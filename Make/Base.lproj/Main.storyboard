@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Video-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Make" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,19 +15,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aEu-e1-bKA">
-                                <rect key="frame" x="137" y="355" width="163" height="164"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" image="square.and.arrow.down" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="aEu-e1-bKA">
+                                <rect key="frame" x="0.0" y="207" width="414" height="445"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="aEu-e1-bKA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="187" id="LTh-Tr-Eag"/>
+                            <constraint firstItem="aEu-e1-bKA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eKv-Jo-nNy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aEu-e1-bKA" secondAttribute="bottom" constant="137" id="qLm-NC-eyW"/>
+                            <constraint firstItem="aEu-e1-bKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uhd-E4-JL7"/>
+                            <constraint firstItem="aEu-e1-bKA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="vHY-A7-j2p"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="x3q-Jo-jq5" appends="YES" id="BJW-It-1oK"/>
                         </connections>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="xhb-vg-NGK"/>
+                    <tabBarItem key="tabBarItem" title="Video" image="video.badge.plus" catalog="system" selectedImage="video.badge.plus" id="xhb-vg-NGK">
+                        <color key="badgeColor" red="0.5" green="0.1209798913" blue="0.064635229190000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="imageView" destination="aEu-e1-bKA" id="UPJ-q9-qbj"/>
                     </connections>
@@ -47,6 +55,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5GQ-in-nTV" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="44c-CU-fDl">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -59,7 +68,9 @@
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.5" green="0.1209798913" blue="0.064635229190000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="video.badge.plus" catalog="system" width="128" height="82"/>
     </resources>
 </document>
